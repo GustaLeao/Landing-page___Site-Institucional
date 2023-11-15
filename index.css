@@ -44,7 +44,17 @@ p .paragrafro {
   margin-bottom: 32px;
 }
 
-.botao{
-  background-color: #ff325e;
+.botao {
+  background-color: #ff725e;
   padding: 16px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+.botao-transparente {
+  background-color: transparent;
+  color: #ff725e;
+  padding: 16px 32px;
+  text-underline-offset: 4px;
 }
