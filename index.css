@@ -11,7 +11,7 @@ body {
 
 header {
   background-color: #ffac6f;
-  padding: 24px 80px;
+  padding: 1.5rem 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +19,7 @@ header {
 
 header nav a {
   font-weight: 600;
-  padding: 32px;
+  padding: 2rem;
   color: white;
   text-decoration: none;
 }
@@ -27,27 +27,27 @@ header nav a {
 #inicio {
   display: flex;
   align-items: center;
-  gap: 32px;
-  padding: 24px 80px 128px 80px;
+  gap: 1rem;
+  padding: 1.5rem 5rem 8rem 5rem;
   position: relative;
 }
 
 h1,
 h2 {
   font-weight: 600;
-  font-size: 32px;
-  margin-bottom: 32px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .paragrafo {
   line-height: 150%;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .botao {
   background-color: #ff725e;
-  padding: 16px 32px;
-  border-radius: 8px;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   color: white;
 }
@@ -55,49 +55,55 @@ h2 {
 .botao-transparente {
   background-color: transparent;
   color: #ff725e;
-  padding: 16px 32px;
-  text-underline-offset: 4px;
+  padding: 1rem 2rem;
+  text-underline-offset: 0.3rem;
+}
+
+.img-inicio{
+  height: 100vh;
+  width:100vw;
 }
 
 .shape {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  z-index: -10;
+  width: 100vw;
+  z-index: -1;
+  height:40%;
 }
 
 #clinica {
   display: flex;
   align-items: center;
-  gap: 64px;
-  padding: 64px 32px;
+  gap: 4rem;
+  padding: 4rem 2rem;
 }
 
 #clinica li {
-  margin-bottom: 16px;
-  margin-left: 16px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 #farmacia {
-  padding: 64px 32px;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
 #farmacia img {
-  margin: 64px auto;
+  margin: 4rem auto;
 }
 
 #farmacia .paragrafo {
-  max-width: 950px;
+  max-width: 59.375rem;
   margin: 0px auto;
 }
 
 #duvidas {
   display: flex;
   align-items: center;
-  gap: 64px;
-  padding: 64px 80px;
+  gap: 4rem;
+  padding: 4rem 5rem;
 }
 
 .duvida {
@@ -105,25 +111,25 @@ h2 {
 }
 
 .duvida h3 {
-  border: 3px solid #ff725e;
-  border-radius: 8px;
+  border: 0.19rem solid #ff725e;
+  border-radius: 0.5rem;
   cursor: pointer;
-  padding: 24px;
+  padding: 1.5rem;
 }
 
 .duvida img {
   position: absolute;
-  top: 32px;
-  right: 24px;
+  top: 2rem;
+  right: 1.5rem;
 }
 
 .duvida .paragrafo {
-  border-radius: 0px 0px 8px 8px;
-  border-right: 1px solid #ff725e;
-  border-bottom: 1px solid #ff725e;
-  border-left: 1px solid #ff725e;
-  margin-top: -8px;
-  padding: 0px 24px;
+  border-radius: 0px 0px 0.5rem 0.5rem;
+  border-right: 0.06rem solid #ff725e;
+  border-bottom: 0.06rem solid #ff725e;
+  border-left: 0.06rem solid #ff725e;
+  margin-top: -0.5rem;
+  padding: 0px 1.5rem;
   height: 0;
   overflow: hidden;
   opacity: 0;
@@ -133,14 +139,14 @@ h2 {
 .duvida.ativa .paragrafo{
   opacity: 1;
   height: fit-content;
-  padding: 24px;
+  padding: 1.5rem;
 }
 
 footer{
   background: rgba(255, 154, 108, 0.25);
   display: flex;
-  gap: 80px;
-  padding: 64px 80px;
+  gap: 5rem;
+  padding: 4rem 5rem;
   justify-content: space-between
 }
 
@@ -148,36 +154,46 @@ footer img,
 footer .titulo{
   display: block;
   font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 footer nav a{
   color: #263238;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   text-decoration: none;
-  max-width: 350px;
+  max-width: 21.875rem;
 }
 
 footer p{
-  margin-bottom: 16px;
-  max-width: 350px;
+  margin-bottom: 1rem;
+  max-width: 21.875rem;
 }
 footer p a{
   color: #ff725e;
   text-decoration: none;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 #copyright{
   background-color: #263238;
-  padding: 24px;
-  font-size: 16px;
+  padding: 1.5rem;
+  font-size: 1rem;
   color: white;
   text-align: center;
 }
 
 #copyright a{
   color: #ff725e;
+}
+
+@media (max-width:1400px){
+  #inicio{
+
+  }
+
+  .div-inicio{
+
+  }
 }
