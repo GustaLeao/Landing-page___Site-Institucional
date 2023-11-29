@@ -32,6 +32,11 @@ header nav a {
   position: relative;
 }
 
+.img-inicio {
+  height: 100vh;
+  width: 100vw;
+}
+
 h1,
 h2 {
   font-weight: 600;
@@ -42,6 +47,11 @@ h2 {
 .paragrafo {
   line-height: 150%;
   margin-bottom: 2rem;
+}
+
+.div_inicio_botoes{
+  display: flex;
+  justify-content: space-between;
 }
 
 .botao {
@@ -59,18 +69,13 @@ h2 {
   text-underline-offset: 0.3rem;
 }
 
-.img-inicio{
-  height: 100vh;
-  width:100vw;
-}
-
 .shape {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100vw;
   z-index: -1;
-  height:40%;
+  height: 40%;
 }
 
 #clinica {
@@ -136,29 +141,29 @@ h2 {
   transition: 0.15s;
 }
 
-.duvida.ativa .paragrafo{
+.duvida.ativa .paragrafo {
   opacity: 1;
   height: fit-content;
   padding: 1.5rem;
 }
 
-footer{
+footer {
   background: rgba(255, 154, 108, 0.25);
   display: flex;
   gap: 5rem;
   padding: 4rem 5rem;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 footer img,
-footer .titulo{
+footer .titulo {
   display: block;
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-footer nav a{
+footer nav a {
   color: #263238;
   display: block;
   margin-bottom: 1rem;
@@ -166,17 +171,17 @@ footer nav a{
   max-width: 21.875rem;
 }
 
-footer p{
+footer p {
   margin-bottom: 1rem;
   max-width: 21.875rem;
 }
-footer p a{
+footer p a {
   color: #ff725e;
   text-decoration: none;
   margin-bottom: 1rem;
 }
 
-#copyright{
+#copyright {
   background-color: #263238;
   padding: 1.5rem;
   font-size: 1rem;
@@ -184,16 +189,6 @@ footer p a{
   text-align: center;
 }
 
-#copyright a{
+#copyright a {
   color: #ff725e;
-}
-
-@media (max-width:1400px){
-  #inicio{
-
-  }
-
-  .div-inicio{
-
-  }
 }
