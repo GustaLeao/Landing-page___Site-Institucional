@@ -33,11 +33,14 @@ header nav a {
   text-decoration: none;
 }
 
+section{
+  padding: 4rem 5rem;
+}
+
 #inicio {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1.5rem 5rem 8rem 5rem;
   position: relative;
 }
 
@@ -91,7 +94,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 4rem;
-  padding: 4rem 2rem;
+  
 }
 
 #clinica li {
@@ -100,8 +103,9 @@ h2 {
 }
 
 #farmacia {
-  padding: 4rem 2rem;
-  text-align: center;
+  
+  display: flex;
+  gap: 3rem;
 }
 
 #farmacia img {
@@ -109,7 +113,7 @@ h2 {
 }
 
 #farmacia .paragrafo {
-  max-width: 59.375rem;
+  text-align: justify;
   margin: 0px auto;
 }
 
@@ -117,7 +121,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 4rem;
-  padding: 4rem 5rem;
+  
 }
 
 .duvida {
