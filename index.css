@@ -14,6 +14,10 @@ body {
   color: #263238;
 }
 
+header .logo{
+   width: 200px;
+}
+
 header {
   background-color: #ffac6f;
   padding: 1.5rem 5rem;
@@ -45,7 +49,7 @@ header nav a {
 h1,
 h2 {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 4.8rem;
   margin-bottom: 2rem;
 }
 
@@ -76,11 +80,11 @@ h2 {
 
 .shape {
   position: absolute;
-  bottom: 0;
+  bottom: -245px;
   left: 0;
   width: 100vw;
   z-index: -1;
-  height: 40%;
+  height: 100vh;
 }
 
 #clinica {
@@ -164,7 +168,7 @@ footer img,
 footer .titulo {
   display: block;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   margin-bottom: 1.5rem;
 }
 
@@ -183,13 +187,13 @@ footer p {
 footer p a {
   color: #ff725e;
   text-decoration: none;
-  margin-bottom: 1rem;
+  margin-bottom: 1.0rem;
 }
 
 #copyright {
   background-color: #263238;
   padding: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: white;
   text-align: center;
 }
