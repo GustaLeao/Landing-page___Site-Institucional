@@ -35,9 +35,11 @@ header nav a {
 
 section{
   padding: 4rem 5rem;
+  margin-bottom: 8rem;
 }
 
 #inicio {
+  margin-bottom: 4rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -83,9 +85,9 @@ h2 {
 
 .shape {
   position: absolute;
-  bottom: -245px;
+  bottom: -290px;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: -1;
   height: 100vh;
 }
@@ -163,12 +165,21 @@ h2 {
 footer {
   background: rgba(255, 154, 108, 0.25);
   display: flex;
-  gap: 5rem;
+  flex-direction: row-reverse;
   padding: 4rem 5rem;
   justify-content: space-between;
 }
 
-footer img,
+.first.div-footer{
+  display: flex;
+  align-items: baseline;
+}
+
+footer img{
+  width: 140px;
+
+}
+
 footer .titulo {
   display: block;
   font-weight: 600;
@@ -186,7 +197,6 @@ footer nav a {
 
 footer p {
   margin-bottom: 1rem;
-  max-width: 21.875rem;
 }
 footer p a {
   color: #ff725e;
