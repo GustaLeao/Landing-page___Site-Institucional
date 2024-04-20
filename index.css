@@ -32,6 +32,7 @@ header nav a {
   padding: 2rem;
   color: white;
   text-decoration: none;
+  font-size: 3.0rem;
 }
 
 section{
@@ -57,6 +58,10 @@ h2 {
   font-weight: 600;
   font-size: 4.8rem;
   margin-bottom: 2rem;
+}
+
+h2{
+  font-size: 3.6rem;
 }
 
 .paragrafo {
@@ -112,7 +117,7 @@ h2 {
 }
 
 #farmacia img {
-  margin: 4rem auto;
+  margin: auto;
 }
 
 #farmacia .paragrafo {
@@ -175,6 +180,7 @@ footer {
 .first.div-footer{
   display: flex;
   align-items: baseline;
+  margin: auto 0;
 }
 
 footer img{
@@ -223,9 +229,15 @@ footer p a {
     height:65vh;
     width: 65vw;
   }
-
+  section{
+    margin-bottom: 4rem;
+  }
   #inicio{
     gap:5rem;
+    margin-bottom: 8rem;
+  }
+  .div-inicio{
+    padding-bottom: 10rem;
   }
   .shape{
     bottom:-415px;
@@ -233,8 +245,23 @@ footer p a {
 }
 
 @media (max-width: 1280px) {
-  .img-inicio {
-    width: 80vw;
+  *{
+    font-size: 2rem;
+  }
+  header nav a {
+    font-size:2.5rem;
+  }
+  .img-inicio{
+    height:60vh;
+  }
+  h1{
+    font-size:4rem;
+  }
+  h2{
+    font-size:3.0rem;
+  }
+  .duvida h3{
+    padding: 1.5rem 4rem 1.5rem 1.5rem;
   }
 }
 
