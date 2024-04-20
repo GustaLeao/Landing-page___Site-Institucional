@@ -8,6 +8,7 @@ html {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
+  text-align: justify;
 }
 
 body {
@@ -234,33 +235,28 @@ footer p a {
   }
 }
 
-@media (max-width: 1025px) {
-  .shape {
-    bottom: 5rem;
-  }
-
-  .img-inicio {
-    width: 40vw;
-  }
-}
-
-@media (max-width: 768px) {
-  .img-inicio {
-    width: 40vw;
-  }
-
-  #duvidas .img-duvida {
-    width: 40vw;
-  }
-}
 
 @media (max-width: 574px) {
+.imgs{
+  width: 77vw;
+  height: fit-content;
+}
+
   #inicio {
     display: flex;
     flex-direction: column;
   }
-  .img-inicio {
-    width: 100vw;
-    height: fit-content;
+
+  #clinica{
+    flex-direction: column-reverse;
+  }
+
+  #farmacia,#duvidas{
+    flex-direction: column;
+  }
+
+  footer{
+    flex-direction: column-reverse;
+    gap:3rem
   }
 }
