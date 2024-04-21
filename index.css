@@ -112,6 +112,7 @@ h2 {
 #farmacia {
   display: flex;
   gap: 3rem;
+  margin-bottom: 0;
 }
 
 #farmacia img {
@@ -263,19 +264,13 @@ footer p a {
     bottom: -256px;
   }
 
-  #farmacia {
-    margin-bottom: 0;
-  }
-
   footer {
     padding: 2rem 5rem;
-  }
-  footer .titulo {
-    font-size: 2rem;
   }
   footer img {
     width: 125px;
   }
+
   #copyright {
     font-size: 1.2rem;
   }
