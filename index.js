@@ -6,39 +6,38 @@ elementosDuvida.forEach(function (duvida) {
     duvida.classList.toggle("ativa");
   });
 });
+
 const verifyResolution = () => {
   if (window.innerWidth < 580) {
-    headerNav.innerHTML =`
+    headerNav.innerHTML = `
       <label id="navigation_label" for="navigation_button">
         <input type="checkbox" id="navigation_button"></input>
         <ion-icon id="navigation_icon" name="reorder-three-sharp"></ion-icon>
       </label>
       <div id="nav_box">
-      <a href="#inicio">Início</a>
-      <a href="#clinica">Clínica</a>
-      <a href="#farmacia">Farmácia</a>
-      <a href="#duvidas">Dúvidas</a>
+        <a href="#inicio">Início</a>
+        <a href="#clinica">Clínica</a>
+        <a href="#farmacia">Farmácia</a>
+        <a href="#duvidas">Dúvidas</a>
       </div>`;
-    /*var links = ['inicio', 'farmacia', 'clinica', 'duvidas'];
-    const linksContent = ['Início', 'Farmácia', 'Clínica', 'Dúvidas']
 
-    for(i=0;i<links.length;i++){
-        var a = document.createElement('a');
-        a.href = `#${links[i]}`; // Você pode definir o href conforme necessário
-        a.textContent = linksContent[i];
-        headerNav.appendChild(a);
-    }
-    console.log()
-    */
+    const navButton = document.getElementById("navigation_button");
+    let navBox = document.getElementById("nav_box");
 
-    /* Código experimental para adicionar os links no headerNav
-    links.forEach(function(link) {
-        var a = document.createElement('a');
-        a.id = link;
-        a.href = `#${links}`; // Você pode definir o href conforme necessário
-        a.textContent = linksContent;
-        headerNav.appendChild(a);
-    });*/
+    navButton.onchange = () => {
+      navBox.classList.toggle("visible");
+      console.log("apertado");
+    };
+    document.onclick = (e) => {
+      var isClickInside = navBox.contains(e.target);
+
+      if (!isClickInside) {
+        navBox.classList.remove("visible");
+      }
+      else{
+        console.log('foi dentro')
+      }
+    };
   }
 };
 

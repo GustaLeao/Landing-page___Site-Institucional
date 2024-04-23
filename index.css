@@ -323,7 +323,7 @@ footer p a {
     display: flex;
     flex-direction: column;
     z-index: 1;
-    background-color: #ff725e;
+    background-color: #ffac6f;
     border-radius: 5%;
     position: absolute;
     align-items: flex-end;
@@ -333,7 +333,7 @@ footer p a {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   }
 
-  #navigation_button:checked ~ #nav_box{
+  #nav_box.visible{
     opacity: 1;
     visibility: visible;
   }
