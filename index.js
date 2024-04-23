@@ -8,9 +8,17 @@ elementosDuvida.forEach(function (duvida) {
 });
 const verifyResolution = () => {
   if (window.innerWidth < 580) {
-    headerNav.innerHTML =
-      '<input type="checkbox" id="navigation_button"></input>';
-
+    headerNav.innerHTML =`
+      <label id="navigation_label" for="navigation_button">
+        <input type="checkbox" id="navigation_button"></input>
+        <ion-icon id="navigation_icon" name="reorder-three-sharp"></ion-icon>
+      </label>
+      <div id="nav_box">
+      <a href="#inicio">Início</a>
+      <a href="#clinica">Clínica</a>
+      <a href="#farmacia">Farmácia</a>
+      <a href="#duvidas">Dúvidas</a>
+      </div>`;
     /*var links = ['inicio', 'farmacia', 'clinica', 'duvidas'];
     const linksContent = ['Início', 'Farmácia', 'Clínica', 'Dúvidas']
 

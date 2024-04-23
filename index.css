@@ -25,6 +25,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 header nav a {
@@ -34,6 +35,7 @@ header nav a {
   text-decoration: none;
   font-size: 3rem;
 }
+
 
 section {
   padding: 4rem 5rem;
@@ -277,11 +279,8 @@ footer p a {
 }
 
 @media (max-width: 1280px) {
-  * {
-    font-size: 2rem;
-  }
   header nav a {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .img-inicio {
     height: 60vh;
@@ -304,6 +303,43 @@ footer p a {
 }
 
 @media (max-width: 574px) {
+  #navigation_label{
+    position:relative;
+  }
+  
+  #navigation_button{
+    opacity: 0;
+    position: absolute;
+  }
+  
+  #navigation_icon{
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  
+  #nav_box{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: #ff725e;
+    border-radius: 5%;
+    position: absolute;
+    align-items: flex-end;
+    right: 0px;
+    padding: 0px 5px;
+    width: 120px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #navigation_button:checked ~ #nav_box{
+    opacity: 1;
+    visibility: visible;
+  }
+  header nav a {
+    padding:0.5rem;
+  }
   .imgs {
     width: 77vw;
     height: fit-content;
