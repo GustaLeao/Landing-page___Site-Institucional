@@ -36,9 +36,8 @@ header nav a {
   font-size: 3rem;
 }
 
-
 section {
-  padding: 4rem 5rem;
+  padding: 4rem 4rem;
   margin-bottom: 8rem;
 }
 
@@ -98,6 +97,10 @@ h2 {
   width: 100%;
   z-index: -1;
   height: 100vh;
+}
+.shape.invisible {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #clinica {
@@ -303,22 +306,22 @@ footer p a {
 }
 
 @media (max-width: 574px) {
-  #navigation_label{
-    position:relative;
+  #navigation_label {
+    position: relative;
   }
-  
-  #navigation_button{
+
+  #navigation_button {
     opacity: 0;
     position: absolute;
   }
-  
-  #navigation_icon{
+
+  #navigation_icon {
     width: 30px;
     height: 30px;
     color: white;
   }
-  
-  #nav_box{
+
+  #nav_box {
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -327,24 +330,42 @@ footer p a {
     border-radius: 5%;
     position: absolute;
     align-items: flex-end;
-    right: 0px;
+    right: 10px;
     padding: 0px 5px;
     width: 120px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   }
 
-  #nav_box.visible{
+  #nav_box.visible {
     opacity: 1;
     visibility: visible;
   }
+
   header nav a {
-    padding:0.5rem;
+    padding: 0.5rem;
   }
+
+  section{
+    padding: 4rem 2rem;
+  }
+
   .imgs {
     width: 77vw;
     height: fit-content;
   }
 
+  h1 {
+    font-size: 3.5rem;
+    text-align: justify;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  li {
+    text-align: left;
+  }
   #inicio {
     display: flex;
     flex-direction: column;

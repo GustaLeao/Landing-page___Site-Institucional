@@ -1,6 +1,6 @@
 var elementosDuvida = document.querySelectorAll(".duvida");
 const headerNav = document.getElementById("header_nav");
-
+const shape = document.getElementById("shape");
 elementosDuvida.forEach(function (duvida) {
   duvida.addEventListener("click", function () {
     duvida.classList.toggle("ativa");
@@ -20,7 +20,7 @@ const verifyResolution = () => {
         <a href="#farmacia">Farmácia</a>
         <a href="#duvidas">Dúvidas</a>
       </div>`;
-
+    shape.classList.add("invisible");
     const navButton = document.getElementById("navigation_button");
     let navBox = document.getElementById("nav_box");
 
@@ -33,9 +33,9 @@ const verifyResolution = () => {
 
       if (!isClickInside) {
         navBox.classList.remove("visible");
-      }
-      else{
-        console.log('foi dentro')
+        console.log("foi fora");
+      } else {
+        console.log("foi dentro");
       }
     };
   }
