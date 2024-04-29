@@ -38,6 +38,9 @@ const verifyResolution = () => {
         console.log("foi dentro");
       }
     };
+  }if(window.innerWidth>580){
+    const checkbox = document.getElementById('navigation_label')
+    checkbox.remove()
   }
 };
 
