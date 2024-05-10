@@ -41,6 +41,7 @@ const verifyResolution = () => {
   }if(window.innerWidth>580){
     const checkbox = document.getElementById('navigation_label')
     checkbox.remove()
+    shape.classList.remove('invisible')
   }
 };
 
