@@ -9,9 +9,6 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
   text-align: justify;
-}
-
-body {
   color: #263238;
 }
 
@@ -21,7 +18,7 @@ header .logo {
 
 header {
   background-color: #ffac6f;
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,17 +37,43 @@ section {
   margin-bottom: 8rem;
 }
 
+.imgs,
+.div_inicio_botoes,
+.logo,
+.first.div-footer,
+#navigation_icon,
+header,
+section{
+  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+p,h1,h2,a,h3,ul,li{
+  -webkit-touch-callout: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+  user-select:text;
+}
+
 #inicio {
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   position: relative;
+  
 }
 
 .img-inicio {
   height: 100vh;
   width: 100vw;
+  
 }
 
 h1,
@@ -72,21 +95,29 @@ h2 {
 .div_inicio_botoes {
   display: flex;
   justify-content: space-evenly;
+  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .botao {
   background-color: #ff725e;
   padding: 1rem 2rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   text-decoration: none;
   color: white;
 }
 
 .botao-transparente {
-  background-color: transparent;
+  background-color: rgb(247, 247, 247);
   color: #ff725e;
+  border: 1px solid #ff725e;
+  border-radius: 1rem;
   padding: 1rem 2rem;
-  text-underline-offset: 0.3rem;
+  text-decoration: none;
 }
 
 .shape {
@@ -141,7 +172,7 @@ h2 {
 
 .duvida h3 {
   border: 0.19rem solid #ff725e;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   cursor: pointer;
   padding: 1.5rem;
 }
@@ -153,7 +184,7 @@ h2 {
 }
 
 .duvida .paragrafo {
-  border-radius: 0px 0px 0.5rem 0.5rem;
+  border-radius: 0px 0px 1rem 1rem;
   border-right: 0.06rem solid #ff725e;
   border-bottom: 0.06rem solid #ff725e;
   border-left: 0.06rem solid #ff725e;
@@ -338,22 +369,28 @@ footer p a {
 
   #nav_box {
     visibility: hidden;
+    opacity: 0;
+
+    z-index: 1;
+    position: absolute;
+    right: -30px;
+    top:0px;
+
+    align-items: right;
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    padding: 5px 5px;
     background-color: #ffac6f;
-    border-radius: 5%;
-    position: absolute;
-    align-items: flex-end;
-    right: 10px;
-    padding: 0px 5px;
     width: 120px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 0 1rem;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    transition:0.10s
   }
 
   #nav_box.visible {
     opacity: 1;
     visibility: visible;
+    top:45px;
   }
 
   header nav a {

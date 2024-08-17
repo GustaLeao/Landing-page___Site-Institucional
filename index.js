@@ -39,8 +39,10 @@ const verifyResolution = () => {
     };
   }
   if (window.innerWidth > 580) {
+    const icon = document.getElementById('navigation_icon');
     const checkbox = document.getElementById("navigation_label");
     checkbox.remove();
+    icon.remove();
     shape.classList.remove("invisible");
   }
 };
