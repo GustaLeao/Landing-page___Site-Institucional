@@ -33,7 +33,6 @@ header nav a {
   padding: 2rem;
   color: white;
   text-decoration: none;
-  font-size: 3rem;
 }
 
 section {
@@ -231,11 +230,9 @@ footer p a {
   }
 
   header .logo {
-    width: 150px;
+    width: 100px;
   }
-  header nav a {
-    font-size: 2.4rem;
-  }
+
   h1 {
     font-size: 3.6rem;
   }
@@ -283,16 +280,16 @@ footer p a {
 
 @media (max-width: 1280px) {
   header nav a {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .img-inicio {
     height: 60vh;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   .duvida h3 {
     padding: 1.5rem 4rem 1.5rem 1.5rem;
@@ -305,14 +302,32 @@ footer p a {
   }
 }
 
-@media (max-width: 574px) {
-  #navigation_label {
+@media (max-width: 850px) {
+  #clinica {
+    flex-direction: column-reverse;
+  }
+  #inicio,
+  #duvidas,
+  #farmacia {
+    flex-direction: column;
+  }
+  .imgs {
+    width: 60vw;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 580px) {
+  #header_nav {
     position: relative;
   }
 
   #navigation_button {
     opacity: 0;
+    inset: 0;
+    z-index: 1;
     position: absolute;
+    cursor: pointer;
   }
 
   #navigation_icon {
@@ -345,7 +360,7 @@ footer p a {
     padding: 0.5rem;
   }
 
-  section{
+  section {
     padding: 4rem 2rem;
   }
 
@@ -366,16 +381,13 @@ footer p a {
   li {
     text-align: left;
   }
-  #inicio {
-    display: flex;
-    flex-direction: column;
-  }
 
   #clinica {
     flex-direction: column-reverse;
   }
 
   #farmacia,
+  #inicio,
   #duvidas {
     flex-direction: column;
   }
